@@ -1,7 +1,8 @@
 package com.huoli.test;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.huoli.util.DateUtil;
+
+import java.util.Date;
 
 /**
  * 描述: git练习
@@ -13,17 +14,19 @@ import org.slf4j.LoggerFactory;
  */
 public class Test {
     
-    private static final Logger logger = LoggerFactory.getLogger(Test.class);
-    
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        logger.warn("this is log!");
-    
         newBranch();
+        System.out.println(today());
     }
     
     private static String newBranch() {
         System.out.println("Hello,I'm from dev branch!");
         return null;
+    }
+    
+    private static String today() {
+        Date date = new Date();
+        return DateUtil.getDefaultFormat(date);
     }
 }
