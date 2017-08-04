@@ -5,7 +5,7 @@ import com.huoli.util.DateUtil;
 import java.util.Date;
 
 /**
- * 描述: git练习
+ * 描述: from eclipse
  * 版权: Copyright (c) 2017
  * 作者: liangkc
  * 版本: 1.0
